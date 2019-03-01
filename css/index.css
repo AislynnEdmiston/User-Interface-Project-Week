@@ -135,8 +135,30 @@ table {
 }
 /* Your Code Goes Here */
 body {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #222222;
   font-family: Roboto, Arial, sans-serif;
-  /*Home page specific*/
+  display: flex;
+  flex-direction: column;
+}
+body .menu-content {
+  background-color: #828282;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: none;
+}
+body .menu-content h1 {
+  width: 50%;
+  border: 2px solid black;
+}
+body .menu-content nav {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  border: 2px solid black;
+}
+body .menu-content nav a {
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0 10px;
 }
