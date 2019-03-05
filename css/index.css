@@ -136,14 +136,18 @@ table {
 .menu-content {
   background-color: #828282;
   width: 100%;
-  display: flex;
-  flex-wrap: none;
 }
 .menu-content nav {
   display: flex;
   width: 100%;
   padding: 10px;
   flex-direction: row;
+}
+.menu-content nav h1 {
+  font-weight: Bold;
+  font-size: 24px;
+  padding-right: 30px;
+  color: #FFFFFF;
 }
 .menu-content nav a {
   width: 100%;
@@ -155,7 +159,7 @@ table {
   width: 100%;
   position: relative;
 }
-.home-page-intro .header-pic {
+.home-page-intro .intro-pic {
   width: 100%;
 }
 .home-page-intro h1 {
@@ -166,6 +170,11 @@ table {
 .home-page {
   margin: auto;
   width: 80%;
+}
+footer {
+  width: 80%;
+  background-color: #828282;
+  margin: auto;
 }
 /* Your Code Goes Here */
 body {
