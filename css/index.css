@@ -166,15 +166,40 @@ table {
   position: absolute;
   z-index: 5;
   bottom: 100px;
+  font-weight: Bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFF;
+  padding-left: 80px;
 }
 .home-page {
   margin: auto;
   width: 80%;
 }
 footer {
-  width: 80%;
+  width: 100%;
   background-color: #828282;
+  padding: 45px 10px;
+}
+footer .footer-content {
+  display: flex;
+  width: 80%;
   margin: auto;
+  color: #FFF;
+  font-weight: Regular;
+  justify-content: space-between;
+  align-content: center;
+  line-height: 26px;
+}
+footer .footer-content .input input {
+  padding: 5px;
+  width: 70%;
+  margin: 10px 0;
+}
+footer .footer-content .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* Your Code Goes Here */
 body {

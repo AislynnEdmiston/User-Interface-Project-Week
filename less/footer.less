@@ -1,5 +1,30 @@
 footer{
-    width: 80%;
+    width: 100%;
     background-color: @foot-bg;
-    margin: auto;
+    padding: 45px 10px;
+
+    .footer-content{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        color: @tab-hover-color;
+        font-weight: @font-weight;
+        justify-content: space-between;
+        align-content: center;
+        line-height: @foot-line-height;
+
+        .input{
+            input{
+                padding: 5px;
+                width: 70%;
+                margin: 10px 0;
+            }
+        }
+
+        .copyright{
+           width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
