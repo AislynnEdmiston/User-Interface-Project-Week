@@ -196,10 +196,14 @@ footer .footer-content .input input {
   width: 70%;
   margin: 10px 0;
 }
-footer .footer-content .copyright {
+footer .copyright {
   width: 100%;
   display: flex;
+}
+footer .copyright p {
+  padding-top: 30px;
   justify-content: center;
+  margin: 0 auto;
 }
 /* Your Code Goes Here */
 body {
