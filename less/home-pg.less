@@ -1,4 +1,122 @@
 .home-page{
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
+
+    .preview{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .about{
+            display: flex;
+            width: 45%;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            h3{
+                font-weight: @header-font-weight;
+                font-size: @sub-head-font-size;
+            }
+            a{
+                text-decoration: none;
+            }
+            .btn{
+                border: 1px solid @color;
+                padding: 10px;
+            }
+        }
+        .about-pic{
+            width: 55%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .design-pic{
+            width: 55%;
+            margin-bottom: 30px;
+        }
+        .designs{
+            display: flex;
+            width: 40%;
+            flex-wrap: wrap; 
+            margin-bottom: 30px;
+            padding-left: 10px;
+            h3{
+                font-weight: @header-font-weight;
+                font-size: @sub-head-font-size;
+            }
+            a{
+                text-decoration: none;
+            }
+            .btn{
+                border: 1px solid @color;
+                padding: 10px;
+            }
+        }
+    }
+
+    .recent-projects{
+
+        h3{
+            font-weight: @header-font-weight;
+            font-size: @sub-head-font-size;
+            margin-bottom: 10px; 
+        }
+        .villa{
+            width: 100%;
+            h2{
+                display: flex;
+                font-weight: @header-font-weight;
+                font-size: @sub-head-font-size;
+                margin-bottom: 10px;
+                background-color: @nav-color;
+                width: 30%;
+                padding: 20px;
+                justify-content: center;
+                position: absolute;
+                top: 138%;
+                left: 66.6%;
+            }
+            p{
+                margin: 30px 0;
+            }
+        }
+
+        .outskirts{
+            width: 100%;
+            h2{
+                display: flex;
+                font-weight: @header-font-weight;
+                font-size: @sub-head-font-size;
+                margin-bottom: 10px;
+                background-color: @nav-color;
+                width: 30%;
+                padding: 20px;
+                justify-content: center;
+                position: absolute;
+                top: 184%;
+            }
+            p{
+                margin: 30px 0;
+            }
+        }
+
+        .blocks{
+            width: 100%;
+            h2{
+                display: flex;
+                font-weight: @header-font-weight;
+                font-size: @sub-head-font-size;
+                margin-bottom: 10px;
+                background-color: @nav-color;
+                width: 30%;
+                padding: 20px;
+                justify-content: center;
+                position: absolute;
+                top: 230%;
+                left: 66.5%;
+            }
+            p{
+                margin: 30px 0;
+            }
+        }
+    }
 }

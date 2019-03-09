@@ -133,6 +133,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  background-color: #FFFFFF;
+  color: #222222;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: Regular;
+  font-size: 16px;
+  line-height: 26px;
+}
 .menu-content {
   background-color: #828282;
   width: 100%;
@@ -173,8 +183,118 @@ table {
   padding-left: 80px;
 }
 .home-page {
-  margin: auto;
+  margin: 0 auto;
   width: 80%;
+}
+.home-page .preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-page .preview .about {
+  display: flex;
+  width: 45%;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.home-page .preview .about h3 {
+  font-weight: Bold;
+  font-size: 28px;
+}
+.home-page .preview .about a {
+  text-decoration: none;
+}
+.home-page .preview .about .btn {
+  border: 1px solid #222222;
+  padding: 10px;
+}
+.home-page .preview .about-pic {
+  width: 55%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.home-page .preview .design-pic {
+  width: 55%;
+  margin-bottom: 30px;
+}
+.home-page .preview .designs {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+.home-page .preview .designs h3 {
+  font-weight: Bold;
+  font-size: 28px;
+}
+.home-page .preview .designs a {
+  text-decoration: none;
+}
+.home-page .preview .designs .btn {
+  border: 1px solid #222222;
+  padding: 10px;
+}
+.home-page .recent-projects h3 {
+  font-weight: Bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.home-page .recent-projects .villa {
+  width: 100%;
+}
+.home-page .recent-projects .villa h2 {
+  display: flex;
+  font-weight: Bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: #D8D8D8;
+  width: 30%;
+  padding: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 138%;
+  left: 66.6%;
+}
+.home-page .recent-projects .villa p {
+  margin: 30px 0;
+}
+.home-page .recent-projects .outskirts {
+  width: 100%;
+}
+.home-page .recent-projects .outskirts h2 {
+  display: flex;
+  font-weight: Bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: #D8D8D8;
+  width: 30%;
+  padding: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 184%;
+}
+.home-page .recent-projects .outskirts p {
+  margin: 30px 0;
+}
+.home-page .recent-projects .blocks {
+  width: 100%;
+}
+.home-page .recent-projects .blocks h2 {
+  display: flex;
+  font-weight: Bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: #D8D8D8;
+  width: 30%;
+  padding: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 230%;
+  left: 66.5%;
+}
+.home-page .recent-projects .blocks p {
+  margin: 30px 0;
 }
 footer {
   width: 100%;
@@ -200,16 +320,16 @@ footer .copyright {
   width: 100%;
   display: flex;
 }
+footer .copyright h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
 footer .copyright p {
   padding-top: 30px;
   justify-content: center;
   margin: 0 auto;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 26px;
 }
 /* Your Code Goes Here */
-body {
-  background-color: #FFFFFF;
-  color: #222222;
-  font-family: Roboto, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-}
