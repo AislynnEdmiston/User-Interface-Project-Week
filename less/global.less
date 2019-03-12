@@ -1,12 +1,22 @@
-body{
-    background-color: #FFFFFF;
-    color: #222222;
-    font-family: Roboto, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    font-weight: @font-weight;
-    font-size: @txt-size;
-    line-height: @foot-line-height;
-
+html{
+    font-size: 62.5%;
     
+    body{
+        background-color: #FFFFFF;
+        color: #222222;
+        font-family: Roboto, Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-weight: @font-weight;
+        font-size: @txt-size;
+        line-height: @foot-line-height;
+        .container{
+            width: 85%;
+            margin: 0 auto;
+            .hidden{
+                display: none;
+            }
+        }
+        
+    }
 }
