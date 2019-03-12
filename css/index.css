@@ -140,7 +140,6 @@ html body {
   background-color: #FFFFFF;
   color: #222222;
   font-family: Roboto, Arial, sans-serif;
-  display: flex;
   flex-direction: column;
   font-weight: Regular;
   font-size: 1.2rem;
@@ -153,27 +152,64 @@ html body .container {
 html body .container .hidden {
   display: none;
 }
-.menu-content {
-  background-color: #828282;
-  width: 100%;
-}
-.menu-content nav {
+.navContainerClosed {
   display: flex;
   width: 100%;
-  padding: 10px;
-  flex-direction: row;
+  font-size: 1.2rem;
+  height: 40px;
+  background-color: #9AA4AE;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: white;
 }
-.menu-content nav h1 {
-  font-weight: Bold;
+.navContainerClosed .navLogo {
+  margin: 20px;
+  font-weight: bold;
   font-size: 24px;
-  padding-right: 30px;
-  color: #FFFFFF;
 }
-.menu-content nav a {
-  width: 100%;
-  justify-content: flex-end;
+.navIcon {
+  width: 30px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 20px;
+}
+.open {
+  background-image: url(/img/nav-hamburger.png);
+}
+.closed {
+  background-image: url(/img/nav-hamburger-close.png);
+}
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0%;
+  z-index: 7;
+  width: 85%;
+  height: 100%;
+  background-color: #9AA4AE;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+.navOpen .menu-items {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.navOpen .menu-items a {
+  color: white;
   text-decoration: none;
-  padding: 0 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.navOpen .menu-items a:hover {
+  color: #222222;
 }
 .home-page-intro {
   width: 100%;
@@ -210,68 +246,87 @@ html body .container .hidden {
   line-height: 75px;
   color: #FFF;
 }
-.preview {
+.home-page {
+  margin: 0 auto;
+  width: 80%;
+}
+.home-page .preview {
   display: flex;
-}
-.preview .about {
-  display: flex;
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.preview .about h3 {
-  font-weight: Bold;
-  font-size: 1.4rem;
-}
-.preview .about .home-text-container {
-  width: 30%;
   flex-wrap: wrap;
 }
-.preview .about .btn {
+.home-page .preview .about {
+  margin-top: 65px;
+  width: 45%;
+  flex-wrap: wrap;
+}
+.home-page .preview .about h3 {
+  font-weight: Bold;
+  font-size: 1.4rem;
+  margin-bottom: 7px;
+}
+.home-page .preview .about p {
+  margin-bottom: 10px;
+}
+.home-page .preview .about a {
+  text-decoration: none;
+}
+.home-page .preview .about .btn {
   border: 1px solid #222222;
-  padding: 10px;
+  padding: 5px;
   color: #222222;
+  width: 100px;
+  text-align: center;
+}
+.home-page .preview .about .btn:hover {
   cursor: pointer;
+  background-color: aqua;
 }
-.preview .about .about-pic {
-  width: 30%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.home-page .preview .img-wraper {
+  width: 50%;
+  margin: 30px 0 30px 40px;
 }
-.preview .design-pic {
-  width: 55%;
-  margin-bottom: 30px;
-  height: auto;
-}
-.preview .designs {
-  display: flex;
+.home-page .preview .designs {
+  margin-top: 65px;
   width: 40%;
   flex-wrap: wrap;
   margin-bottom: 30px;
   padding-left: 10px;
 }
-.preview .designs h3 {
+.home-page .preview .designs h3 {
   font-weight: Bold;
   font-size: 1.4rem;
+  margin-bottom: 7px;
 }
-.preview .designs a {
+.home-page .preview .designs p {
+  margin-bottom: 10px;
+}
+.home-page .preview .designs a {
   text-decoration: none;
 }
-.preview .designs .btn {
+.home-page .preview .designs .btn {
   border: 1px solid #222222;
-  padding: 10px;
+  padding: 5px;
   color: #222222;
+  width: 100px;
+  text-align: center;
 }
-.recent-projects h3 {
+.home-page .preview .designs .btn:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.home-page .recent-projects h3 {
   font-weight: Bold;
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
-.recent-projects .villa {
+.home-page .recent-projects .villa {
   width: 100%;
   position: relative;
 }
-.recent-projects .villa h2 {
+.home-page .recent-projects .villa img {
+  width: 100%;
+}
+.home-page .recent-projects .villa h2 {
   display: flex;
   font-weight: Bold;
   font-size: 1.4rem;
@@ -281,17 +336,20 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 40%;
-  left: 79%;
+  top: 48%;
+  left: 66%;
 }
-.recent-projects .villa p {
+.home-page .recent-projects .villa p {
   margin: 30px 0;
 }
-.recent-projects .outskirts {
+.home-page .recent-projects .outskirts {
   width: 100%;
   position: relative;
 }
-.recent-projects .outskirts h2 {
+.home-page .recent-projects .outskirts img {
+  width: 100%;
+}
+.home-page .recent-projects .outskirts h2 {
   display: flex;
   font-weight: Bold;
   font-size: 1.4rem;
@@ -301,16 +359,19 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 40%;
+  top: 48%;
 }
-.recent-projects .outskirts p {
+.home-page .recent-projects .outskirts p {
   margin: 30px 0;
 }
-.recent-projects .blocks {
+.home-page .recent-projects .blocks {
   width: 100%;
   position: relative;
 }
-.recent-projects .blocks h2 {
+.home-page .recent-projects .blocks img {
+  width: 100%;
+}
+.home-page .recent-projects .blocks h2 {
   display: flex;
   font-weight: Bold;
   font-size: 1.4rem;
@@ -320,10 +381,10 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 40%;
-  left: 79%;
+  top: 48%;
+  left: 66%;
 }
-.recent-projects .blocks p {
+.home-page .recent-projects .blocks p {
   margin: 30px 0;
 }
 .services-content {
