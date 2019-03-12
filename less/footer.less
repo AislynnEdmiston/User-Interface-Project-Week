@@ -2,7 +2,9 @@ footer{
     width: 100%;
     background-color: @foot-bg;
     padding: 45px 10px;
-
+    @media @mobile{
+        width: 93.5%;
+    }
     .footer-content{
         display: flex;
         width: 80%;
@@ -12,7 +14,9 @@ footer{
         justify-content: space-between;
         align-content: center;
         line-height: @foot-line-height;
-
+        @media @mobile{
+            flex-direction: column;
+        }
         .input{
             input{
                 padding: 5px;
@@ -20,6 +24,15 @@ footer{
                 margin: 10px 0;
                 color: grey;
             }
+        }
+        address{
+            h5{
+                font-weight: bold;
+            }
+            @media @mobile{
+                margin-bottom: 10px;
+                
+            } 
         }
     }
     .copyright{

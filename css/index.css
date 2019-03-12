@@ -149,6 +149,12 @@ html body .container {
   width: 85%;
   margin: 0 auto;
 }
+@media (max-width: 1025px) {
+  html body .container {
+    width: 95%;
+    margin: 0 5px 0 10px;
+  }
+}
 html body .container .hidden {
   display: none;
 }
@@ -194,6 +200,16 @@ html body .container .hidden {
   opacity: 0.9;
   margin: 0 auto;
 }
+@media (max-width: 1025px) {
+  .navOpen {
+    width: 90%;
+  }
+}
+@media (max-width: 769px) {
+  .navOpen {
+    width: 100%;
+  }
+}
 .navOpen .menu-items {
   display: flex;
   flex-direction: column;
@@ -228,6 +244,15 @@ html body .container .hidden {
   color: #FFF;
   padding-left: 80px;
 }
+@media (max-width: 769px) {
+  .home-page-intro h1 {
+    font-size: 1.3rem;
+    line-height: 15px;
+    bottom: 35px;
+    padding: 0;
+    left: 20px;
+  }
+}
 .services-intro {
   width: 100%;
   position: relative;
@@ -250,40 +275,105 @@ html body .container .hidden {
   margin: 0 auto;
   width: 80%;
 }
+@media (max-width: 1025px) {
+  .home-page {
+    margin: 0;
+    width: 100%;
+  }
+}
 .home-page .preview {
   display: flex;
   flex-wrap: wrap;
 }
-.home-page .preview .about {
+.home-page .preview .architects-container {
+  display: flex;
+}
+@media (max-width: 769px) {
+  .home-page .preview .architects-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .order {
+    order: 1;
+  }
+}
+.home-page .preview .architects-container .about {
   margin-top: 65px;
   width: 45%;
   flex-wrap: wrap;
 }
-.home-page .preview .about h3 {
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .about {
+    flex-direction: column;
+    flex-wrap: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+.home-page .preview .architects-container .about h3 {
   font-weight: Bold;
   font-size: 1.4rem;
   margin-bottom: 7px;
 }
-.home-page .preview .about p {
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .about h3 {
+    margin: 5px;
+    font-size: 2rem;
+  }
+}
+.home-page .preview .architects-container .about p {
   margin-bottom: 10px;
 }
-.home-page .preview .about a {
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .about p {
+    margin: 5px;
+  }
+}
+.home-page .preview .architects-container .about a {
   text-decoration: none;
 }
-.home-page .preview .about .btn {
+.home-page .preview .architects-container .about .btn {
   border: 1px solid #222222;
   padding: 5px;
   color: #222222;
   width: 100px;
   text-align: center;
 }
-.home-page .preview .about .btn:hover {
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .about .btn {
+    width: 89.6%;
+    margin-top: 25px;
+  }
+}
+.home-page .preview .architects-container .about .btn:hover {
   cursor: pointer;
   background-color: aqua;
 }
-.home-page .preview .img-wraper {
+.home-page .preview .architects-container .img-wraper-one {
   width: 50%;
   margin: 30px 0 30px 40px;
+}
+@media (max-width: 769px) {
+  .home-page .preview .architects-container .img-wraper-one {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.home-page .preview .img-wraper-two {
+  width: 50%;
+  margin: 30px 0 30px 40px;
+}
+@media (max-width: 769px) {
+  .home-page .preview .img-wraper-two {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 .home-page .preview .designs {
   margin-top: 65px;
@@ -292,13 +382,33 @@ html body .container .hidden {
   margin-bottom: 30px;
   padding-left: 10px;
 }
+@media (max-width: 769px) {
+  .home-page .preview .designs {
+    flex-direction: column;
+    flex-wrap: none;
+    margin: 0;
+    padding: 0;
+    width: 93%;
+  }
+}
 .home-page .preview .designs h3 {
   font-weight: Bold;
   font-size: 1.4rem;
   margin-bottom: 7px;
 }
+@media (max-width: 769px) {
+  .home-page .preview .designs h3 {
+    margin: 5px;
+    font-size: 2rem;
+  }
+}
 .home-page .preview .designs p {
   margin-bottom: 10px;
+}
+@media (max-width: 769px) {
+  .home-page .preview .designs p {
+    margin: 5px;
+  }
 }
 .home-page .preview .designs a {
   text-decoration: none;
@@ -310,6 +420,12 @@ html body .container .hidden {
   width: 100px;
   text-align: center;
 }
+@media (max-width: 769px) {
+  .home-page .preview .designs .btn {
+    width: 96.5%;
+    margin-top: 25px;
+  }
+}
 .home-page .preview .designs .btn:hover {
   cursor: pointer;
   background-color: aqua;
@@ -319,12 +435,18 @@ html body .container .hidden {
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
+@media (max-width: 769px) {
+  .home-page .recent-projects h3 {
+    margin-top: 20px;
+  }
+}
 .home-page .recent-projects .villa {
   width: 100%;
   position: relative;
 }
 .home-page .recent-projects .villa img {
   width: 100%;
+  margin-bottom: 30px;
 }
 .home-page .recent-projects .villa h2 {
   display: flex;
@@ -336,11 +458,29 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 48%;
-  left: 66%;
+  top: 62%;
+  left: 67.5%;
 }
-.home-page .recent-projects .villa p {
-  margin: 30px 0;
+@media (max-width: 769px) {
+  .home-page .recent-projects .villa h2 {
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+    margin: 0 auto;
+    width: 81%;
+    left: 2%;
+    top: 13%;
+  }
+}
+.home-page .recent-projects .villa .project-txt {
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 769px) {
+  .home-page .recent-projects .villa .project-txt {
+    width: 100%;
+    margin-top: 60px;
+  }
 }
 .home-page .recent-projects .outskirts {
   width: 100%;
@@ -348,6 +488,7 @@ html body .container .hidden {
 }
 .home-page .recent-projects .outskirts img {
   width: 100%;
+  margin-bottom: 30px;
 }
 .home-page .recent-projects .outskirts h2 {
   display: flex;
@@ -359,10 +500,28 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 48%;
+  top: 62%;
 }
-.home-page .recent-projects .outskirts p {
-  margin: 30px 0;
+@media (max-width: 769px) {
+  .home-page .recent-projects .outskirts h2 {
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+    margin: 0 auto;
+    width: 81%;
+    left: 2%;
+    top: 13%;
+  }
+}
+.home-page .recent-projects .outskirts .project-txt {
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 769px) {
+  .home-page .recent-projects .outskirts .project-txt {
+    width: 100%;
+    margin-top: 60px;
+  }
 }
 .home-page .recent-projects .blocks {
   width: 100%;
@@ -370,6 +529,7 @@ html body .container .hidden {
 }
 .home-page .recent-projects .blocks img {
   width: 100%;
+  margin-bottom: 30px;
 }
 .home-page .recent-projects .blocks h2 {
   display: flex;
@@ -381,11 +541,29 @@ html body .container .hidden {
   padding: 20px;
   justify-content: center;
   position: absolute;
-  top: 48%;
-  left: 66%;
+  top: 62%;
+  left: 67.2%;
 }
-.home-page .recent-projects .blocks p {
-  margin: 30px 0;
+@media (max-width: 769px) {
+  .home-page .recent-projects .blocks h2 {
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+    margin: 0 auto;
+    width: 81%;
+    left: 2%;
+    top: 13%;
+  }
+}
+.home-page .recent-projects .blocks .project-txt {
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 769px) {
+  .home-page .recent-projects .blocks .project-txt {
+    width: 100%;
+    margin-top: 60px;
+  }
 }
 .services-content {
   width: 90%;
@@ -421,12 +599,14 @@ html body .container .hidden {
 }
 .cards .card {
   display: flex;
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   justify-content: space-between;
 }
 .cards .card .card-text-container {
-  width: 47%;
+  width: 40%;
+  margin: 0 auto;
+  margin-left: 100px;
 }
 .cards .card .card-text-container .card-header {
   font-size: 1.7rem;
@@ -444,6 +624,11 @@ footer {
   background-color: #828282;
   padding: 45px 10px;
 }
+@media (max-width: 769px) {
+  footer {
+    width: 93.5%;
+  }
+}
 footer .footer-content {
   display: flex;
   width: 80%;
@@ -454,11 +639,24 @@ footer .footer-content {
   align-content: center;
   line-height: 26px;
 }
+@media (max-width: 769px) {
+  footer .footer-content {
+    flex-direction: column;
+  }
+}
 footer .footer-content .input input {
   padding: 5px;
   width: 70%;
   margin: 10px 0;
   color: grey;
+}
+footer .footer-content address h5 {
+  font-weight: bold;
+}
+@media (max-width: 769px) {
+  footer .footer-content address {
+    margin-bottom: 10px;
+  }
 }
 footer .copyright {
   width: 100%;
