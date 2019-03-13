@@ -1,6 +1,6 @@
 .home-page{
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     @media @tablet{
         margin: 0;
         width: 100%;
@@ -11,6 +11,7 @@
         flex-wrap: wrap;
         .architects-container{
             display: flex;
+            width: 100%;
             @media @mobile {
                 flex-direction: column;
                 width: 100%;
@@ -79,68 +80,76 @@
                 }
             }
         }
-        .img-wraper-two{
-            width: 50%;
-            margin: 30px 0 30px 40px;
-            @media @mobile {
-                margin-top: 20px;
-                margin-bottom: 0;
-                margin-left: 0;
-                width: 100%;
-                overflow: hidden;
-            }
-        }
         
-        .designs{
-            margin-top: 65px;
-            width: 40%;
-            flex-wrap: wrap; 
-            margin-bottom: 30px;
-            padding-left: 10px;
+        .designs-container{
+            display: flex;
+            width: 100%;
             @media @mobile {
                 flex-direction: column;
-                flex-wrap: none;
-                margin: 0;
-                padding: 0;
-                width: 93%;
+                width: 100%;
             }
-            h3{
-                font-weight: @header-font-weight;
-                font-size: @sub-head-font-size;
-                margin-bottom: 7px;
-                @media @mobile{
-                    margin: 5px;
-                    font-size: 2rem;
+            .img-wraper-two{
+            width: 50%;
+            margin: 30px 0 30px 40px;
+                @media @mobile {
+                    margin: 0;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    width: 100%;
+                    overflow: hidden;
                 }
             }
-            p{
-                margin-bottom: 10px;
-                @media @mobile{
-                    margin: 5px;
+            .designs{
+                margin-top: 65px;
+                width: 45%;
+                flex-wrap: wrap; 
+                margin-bottom: 30px;
+                padding-left: 10px;
+                @media @mobile {
+                    flex-direction: column;
+                    flex-wrap: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 93%;
+                }
+                h3{
+                    font-weight: @header-font-weight;
+                    font-size: @sub-head-font-size;
+                    margin-bottom: 7px;
+                    @media @mobile{
+                        margin: 5px;
+                        font-size: 2rem;
+                    }
+                }
+                p{
+                    margin-bottom: 10px;
+                    @media @mobile{
+                        margin: 5px;
+                        
+                    }
+                }
+                a{
+                    text-decoration: none;
+                }
+                .btn{
+                    border: 1px solid @color;
+                    padding: 5px;
+                    color: @color;
+                    width: 100px;
+                    text-align: center;
+                    @media @mobile{
+                        width: 96.5%;
+                        margin-top: 25px;
+                    }
+                }
+                .btn:hover{
+                    cursor: pointer;
+                    background-color: aqua;
                     
                 }
             }
-            a{
-                text-decoration: none;
-            }
-            .btn{
-                border: 1px solid @color;
-                padding: 5px;
-                color: @color;
-                width: 100px;
-                text-align: center;
-                @media @mobile{
-                    width: 96.5%;
-                    margin-top: 25px;
-                }
-            }
-            .btn:hover{
-                cursor: pointer;
-                background-color: aqua;
-                
-            }
         }
-        
     }
 
     .recent-projects{
@@ -155,32 +164,37 @@
         }
         .villa{
             width: 100%;
-            position: relative;
-            img{
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            h2{
-                display: flex;
-                font-weight: @header-font-weight;
-                font-size: @sub-head-font-size;
-                margin-bottom: 10px;
-                background-color: @nav-color;
-                width: 30%;
-                padding: 20px;
-                justify-content: center;
-                position: absolute;
-                top: 62%;
-                left: 67.5%;
-                @media @mobile{
-                    font-size: 2rem;
-                    letter-spacing: 0.6rem;
-                    margin: 0 auto;
-                    width: 81%;
-                    left: 2%; 
-                    top: 13%;
+           
+            .img-holder{
+                position: relative;
+                img{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                h2{
+                    display: flex;
+                    font-weight: @header-font-weight;
+                    font-size: @sub-head-font-size;
+                    margin-bottom: 10px;
+                    background-color: @nav-color;
+                    width: 30%;
+                    padding: 20px;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 0px;
+                    right: -2px;
+                    @media @mobile{
+                        font-size: 2rem;
+                        letter-spacing: 0.6rem;
+                        margin: 0 auto;
+                        width: 81%;
+                        left: 2px; 
+                        top: 80px;
+                    }
+                    
                 }
             }
+            
             .project-txt{
                 width: 55%;
                 margin: 0 auto;
@@ -194,31 +208,35 @@
 
         .outskirts{
             width: 100%;
-            position: relative;
-            img{
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            h2{
-                display: flex;
-                font-weight: @header-font-weight;
-                font-size: @sub-head-font-size;
-                margin-bottom: 10px;
-                background-color: @nav-color;
-                width: 30%;
-                padding: 20px;
-                justify-content: center;
-                position: absolute;
-                top: 62%;
-                @media @mobile{
-                    font-size: 2rem;
-                    letter-spacing: 0.6rem;
-                    margin: 0 auto;
-                    width: 81%;
-                    left: 2%; 
-                    top: 13%;
+            .img-holder{
+                position: relative;
+                img{
+                    width: 100%;
+                    margin-bottom: 30px;
                 }
-            }
+                h2{
+                    display: flex;
+                    font-weight: @header-font-weight;
+                    font-size: @sub-head-font-size;
+                    margin-bottom: 10px;
+                    background-color: @nav-color;
+                    width: 30%;
+                    padding: 20px;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    @media @mobile{
+                        font-size: 2rem;
+                        letter-spacing: 0.6rem;
+                        margin: 0 auto;
+                        width: 81%;
+                        left: 2px; 
+                        top: 80px;
+                    }
+                    
+                }
+           }
             .project-txt{
                 width: 55%;
                 margin: 0 auto;
@@ -232,32 +250,35 @@
 
         .blocks{
             width: 100%;
-            position: relative;
-            img{
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            h2{
-                display: flex;
-                font-weight: @header-font-weight;
-                font-size: @sub-head-font-size;
-                margin-bottom: 10px;
-                background-color: @nav-color;
-                width: 30%;
-                padding: 20px;
-                justify-content: center;
-                position: absolute;
-                top: 62%;
-                left: 67.2%;
-                @media @mobile{
-                    font-size: 2rem;
-                    letter-spacing: 0.6rem;
-                    margin: 0 auto;
-                    width: 81%;
-                    left: 2%; 
-                    top: 13%;
+            .img-holder{
+                position: relative;
+                img{
+                    width: 100%;
+                    margin-bottom: 30px;
                 }
-            }
+                h2{
+                    display: flex;
+                    font-weight: @header-font-weight;
+                    font-size: @sub-head-font-size;
+                    margin-bottom: 10px;
+                    background-color: @nav-color;
+                    width: 30%;
+                    padding: 20px;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 0px;
+                    right: -2px;
+                    @media @mobile{
+                        font-size: 2rem;
+                        letter-spacing: 0.6rem;
+                        margin: 0 auto;
+                        width: 81%;
+                        left: 2px; 
+                        top: 80px;
+                    }
+                    
+                }
+           }
             .project-txt{
                 width: 55%;
                 margin: 0 auto;
