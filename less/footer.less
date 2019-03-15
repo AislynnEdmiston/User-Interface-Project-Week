@@ -1,0 +1,55 @@
+footer{
+    width: 100%;
+    background-color: @foot-bg;
+    padding: 45px 10px;
+    @media @mobile{
+        width: 93.5%;
+    }
+    .footer-content{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        color: @tab-hover-color;
+        font-weight: @font-weight;
+        justify-content: space-between;
+        align-content: center;
+        line-height: @foot-line-height;
+        @media @mobile{
+            flex-direction: column;
+        }
+        .input{
+            input{
+                padding: 5px;
+                width: 70%;
+                margin: 10px 0;
+                color: grey;
+            }
+        }
+        address{
+            h5{
+                font-weight: bold;
+            }
+            @media @mobile{
+                margin-bottom: 10px;
+                
+            } 
+        }
+    }
+    .copyright{
+        width: 100%;
+        display: flex;
+
+        h5{
+           font-size: @foot-head-txt-size;
+           line-height: @foot-head-line-height;  
+        }
+        p{
+            padding-top: 30px;
+            justify-content: center;
+            margin: 0 auto;
+            color: @tab-hover-color;
+            font-size: @foot-txt-size;
+            line-height: @foot-line-height;
+        }
+    }
+}
